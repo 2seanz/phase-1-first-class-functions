@@ -15,12 +15,21 @@ function receivesAFunction(spy) {
 //     return returnsANamedFunction();
 // }
    
-function returnsANamedFunction() {
-    function makeBreakfast() {return " "}
-    return makeBreakfast;
+// function returnsANamedFunction() {
+//    function makeBreakfast() {return " "}
+//     return makeBreakfast;
+//  }
+function returnsANamedFunction(call) {
+    return function newFunction() {
+        
+    }
 }
 
-function returnsAnAnonymousFunction() {
+
+
+
+
+ function returnsAnAnonymousFunction() {
     return function(){}
 }
 
